@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 107.0, 403.0, 407.0 ],
+		"rect" : [ 59.0, 107.0, 403.0, 422.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 95.0, 131.0, 31.0, 22.0 ],
+					"text" : "t s s"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
@@ -83,7 +95,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 186.0, 232.0, 211.0, 141.0 ],
+					"patching_rect" : [ 186.0, 247.0, 211.0, 141.0 ],
 					"text" : "Pairwise difference of two lists: \nThe absolute difference between each element of one list and each element of the other list, resulting in a distance matrix arranged as a vector.\n\ninlet 1: list, triggers computation\ninlet 2: list\n\noutlet: list"
 				}
 
@@ -94,7 +106,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3.0, 382.0, 394.5, 20.0 ],
+					"patching_rect" : [ 3.0, 397.0, 394.5, 20.0 ],
 					"text" : "Juan Ignacio Mendoza G. - 2024",
 					"textjustification" : 1
 				}
@@ -107,7 +119,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 95.0, 107.0, 43.0, 22.0 ],
+					"patching_rect" : [ 95.0, 101.0, 43.0, 22.0 ],
 					"text" : "zlclear"
 				}
 
@@ -131,7 +143,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 137.0, 240.0, 38.0, 22.0 ],
+					"patching_rect" : [ 137.0, 255.0, 38.0, 22.0 ],
 					"text" : "zl.reg"
 				}
 
@@ -144,7 +156,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 137.0, 338.0, 30.0, 30.0 ]
+					"patching_rect" : [ 137.0, 353.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -155,7 +167,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 231.0, 195.0, 38.0, 22.0 ],
+					"patching_rect" : [ 231.0, 210.0, 38.0, 22.0 ],
 					"text" : "zl.reg"
 				}
 
@@ -165,10 +177,10 @@
 					"id" : "obj-10",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 156.0, 195.0, 29.5, 22.0 ],
-					"text" : "join"
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 156.0, 210.0, 39.0, 22.0 ],
+					"text" : "zl.join"
 				}
 
 			}
@@ -179,7 +191,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 40.0, 137.0, 29.5, 22.0 ],
+					"patching_rect" : [ 40.0, 152.0, 29.5, 22.0 ],
 					"text" : "t f b"
 				}
 
@@ -191,7 +203,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 156.0, 150.0, 193.0, 22.0 ],
+					"patching_rect" : [ 156.0, 165.0, 193.0, 22.0 ],
 					"text" : "vexpr abs($f1-$f2) @scalarmode 1"
 				}
 
@@ -203,7 +215,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 40.0, 107.0, 47.0, 22.0 ],
+					"patching_rect" : [ 40.0, 101.0, 47.0, 22.0 ],
 					"text" : "zl.iter 1"
 				}
 
@@ -270,7 +282,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
+					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -286,6 +298,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-4", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -313,7 +339,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"midpoints" : [ 49.5, 175.0, 152.0, 175.0, 152.0, 144.0, 165.5, 144.0 ],
+					"midpoints" : [ 49.5, 190.0, 152.0, 190.0, 152.0, 159.0, 165.5, 159.0 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
