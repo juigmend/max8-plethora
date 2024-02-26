@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 17.0, 58.0, 37.0, 22.0 ],
+					"text" : "zl.rev"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -81,7 +93,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 544.0, 242.0, 29.5, 22.0 ],
+					"patching_rect" : [ 543.0, 242.0, 29.5, 22.0 ],
 					"text" : "3"
 				}
 
@@ -93,7 +105,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 499.0, 242.0, 29.5, 22.0 ],
+					"patching_rect" : [ 498.0, 242.0, 29.5, 22.0 ],
 					"text" : "2"
 				}
 
@@ -105,7 +117,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 454.0, 242.0, 29.5, 22.0 ],
+					"patching_rect" : [ 453.0, 242.0, 29.5, 22.0 ],
 					"text" : "1"
 				}
 
@@ -117,8 +129,8 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "bang", "bang", "bang", "" ],
-					"patching_rect" : [ 489.0, 197.0, 102.0, 22.0 ],
-					"text" : "select diff abs sqr"
+					"patching_rect" : [ 488.0, 197.0, 105.0, 22.0 ],
+					"text" : "select sgn abs sqr"
 				}
 
 			}
@@ -131,7 +143,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 489.0, 10.0, 30.0, 30.0 ]
+					"patching_rect" : [ 488.0, 10.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -202,8 +214,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 352.0, 308.0, 239.5, 181.0 ],
-					"text" : "Pairwise difference of two lists.\n\ninlet 1: list, triggers computation\n\ninlet 2: list\n\ninlet 3 or argument: Mode. diff (default), abs, sqr.\n\noutlet: list, difference between each element of one list and each element of the other list, resulting in a distance matrix arranged as a vector."
+					"patching_rect" : [ 352.0, 308.0, 241.0, 181.0 ],
+					"text" : "Pairwise difference of two lists.\n\ninlet 1: list, triggers computation\n\ninlet 2: list\n\ninlet 3 or argument: Mode. sgn (default), abs, sqr.\n\noutlet: list, difference between each element of one list and each element of the other list, resulting in a distance matrix arranged as a vector."
 				}
 
 			}
@@ -355,6 +367,13 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-10", 0 ]
@@ -521,7 +540,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-27", 0 ]
 				}
 
