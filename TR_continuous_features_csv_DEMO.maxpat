@@ -58,7 +58,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 145.0, 80.0, 238.0, 22.0 ],
-					"text" : "TR_markers_test_10022025.1_REDUCED"
+					"text" : "TR_markers_test_10022025.3_REDUCED"
 				}
 
 			}
@@ -347,7 +347,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 297.0, 505.0, 180.0, 80.0 ],
 					"peakcolor" : [ 0.945098039215686, 0.913725490196078, 0.407843137254902, 1.0 ],
-					"setminmax" : [ 0.0, 1.299999952316284 ],
+					"setminmax" : [ 0.0, 3.0 ],
 					"setstyle" : 1,
 					"size" : 171
 				}
@@ -643,7 +643,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 229.0, 84.0, 402.0, 595.0 ],
+						"rect" : [ 357.0, 88.0, 402.0, 595.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -761,10 +761,10 @@
 									"id" : "obj-6",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 46.0, 251.0, 40.0, 22.0 ],
-									"text" : "t l l l"
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 46.0, 251.0, 29.5, 22.0 ],
+									"text" : "t l l"
 								}
 
 							}
@@ -946,7 +946,17 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"midpoints" : [ 55.5, 384.0, 132.5, 384.0 ],
+									"order" : 0,
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-52", 0 ],
+									"order" : 1,
 									"source" : [ "obj-10", 0 ]
 								}
 
@@ -1109,14 +1119,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-10", 0 ],
 									"source" : [ "obj-6", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-11", 0 ],
-									"midpoints" : [ 76.5, 281.0, 132.5, 281.0 ],
-									"source" : [ "obj-6", 2 ]
 								}
 
 							}
@@ -1589,7 +1591,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 8.0, 5.0, 373.0, 22.0 ],
-					"text" : "C:\\\\\\\\Users\\\\memyself\\\\Documents\\\\Tabula_Rasa_data\\\\test_data_1\\\\"
+					"text" : "C:\\\\\\\\Users\\\\MeMyself\\\\Documents\\\\Tabula_Rasa_data\\\\test_data_1\\\\"
 				}
 
 			}
