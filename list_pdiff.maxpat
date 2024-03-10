@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 79.0, 91.0, 803.0, 588.0 ],
+		"rect" : [ 79.0, 91.0, 804.0, 588.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 560.0, 192.0, 29.5, 22.0 ],
+					"text" : "+ 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "newobj",
@@ -554,8 +566,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 586.0, 266.5, 207.0, 315.0 ],
-					"text" : "Pairwise difference of two lists.\n\ninlet 1: [list] Triggers computation\n\ninlet 2: [list]\n\ninlet 3 or argument 1: [string] Type. sgn (default), abs, sqr.\n\ninlet 4 or argument 2: [atom] 0 = full (default), 1 = self-similarity (inlet 2 becomes inactive).\n\ninlet 5 or argument 3: [atom] Maximum list length (default = 256).\n\noutlet: [list] difference between each element of one list and corresponding element of the other list, resulting in a distance matrix arranged as a vector.\n\nJuan Ignacio Mendoza G. - 2024"
+					"patching_rect" : [ 586.0, 263.0, 209.0, 315.0 ],
+					"text" : "Pairwise difference of two lists.\n\ninlet 1: [list] Triggers computation\n\ninlet 2: [list]\n\ninlet 3 or argument 1: [string] Type. sgn (default), abs, sqr.\n\ninlet 4 or argument 2: [atom] 0 = full (default), 1 = self-similarity (inlet 2 becomes inactive).\n\ninlet 5 or argument 3: [atom] Maximum length for output (default = 256).\n\noutlet: [list] difference between each element of one list and corresponding element of the other list, resulting in a distance matrix arranged as a vector.\n\nJuan Ignacio Mendoza G. - 2024"
 				}
 
 			}
@@ -690,6 +702,13 @@
 					"destination" : [ "obj-6", 0 ],
 					"midpoints" : [ 774.5, 223.0, 432.5, 223.0 ],
 					"source" : [ "obj-15", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-16", 0 ]
 				}
 
 			}
@@ -914,7 +933,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
+					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-37", 0 ]
 				}
 
