@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 53.0, 87.0, 810.0, 548.0 ],
+		"rect" : [ 35.0, 84.0, 813.0, 595.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,169 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"args" : [ "buttons" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"embed" : 1,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-39",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "int" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 6,
+							"revision" : 0,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 484.0, -579.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 0.0, 39.0, 29.5, 22.0 ],
+									"text" : "+ 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-1",
+									"index" : 1,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 0.0, 75.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-42",
+									"maxclass" : "tab",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "int", "", "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 0.0, 0.0, 172.0, 23.0 ],
+									"style" : "default",
+									"tabcolor" : [ 0.294117647058824, 0.294117647058824, 0.294117647058824, 1.0 ],
+									"tabs" : [ "2", "3", "4", "5" ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-42", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 347.0, 360.0, 172.0, 23.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 369.0, 491.0, 154.0, 20.0 ],
+					"text" : "CLUSTER BELONGING",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 397.0, 446.0, 134.0, 20.0 ],
+					"text" : "DETECTED CLUSTER"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "multislider",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 369.0, 513.0, 154.0, 62.0 ],
+					"setminmax" : [ 0.0, 1.0 ],
+					"setstyle" : 1,
+					"size" : 2,
+					"spacing" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bubble" : 1,
 					"id" : "obj-35",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 431.0, 171.0, 339.0, 24.0 ],
+					"patching_rect" : [ 431.0, 174.0, 339.0, 24.0 ],
 					"text" : "OPTIONAL: Summarise all mocap CSV files in the folder."
 				}
 
@@ -58,19 +215,19 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 405.0, 171.0, 24.0, 24.0 ]
+					"patching_rect" : [ 405.0, 174.0, 24.0, 24.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-43",
-					"linecount" : 8,
+					"linecount" : 10,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 505.0, 421.0, 296.0, 114.0 ],
-					"text" : "INSTRUCTIONS:\n     Click or edit the objects indicated by the bubbles in the order of the violet numbers. That will expose the system to the first performance. Then, expose the system to more performances by repeating steps 4 to 6. Step 4 alone will only classify the performance. The system will learn and classify every subsequent performance it is exposed to."
+					"patching_rect" : [ 540.0, 440.0, 259.0, 141.0 ],
+					"text" : "INSTRUCTIONS:\n     Click or edit the objects indicated by the bubbles in the order of the violet numbers, to expose the system to the first performance. Then, expose the system to more performances by repeating steps 4 to 6. It will learn and classify (detect cluster) every subsequent performance it is exposed to. Step 4 without steps 5 and 6, will only classify the performance."
 				}
 
 			}
@@ -85,7 +242,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 502.0, 419.0, 297.0, 119.0 ],
+					"patching_rect" : [ 541.0, 438.0, 258.0, 144.0 ],
 					"proportion" : 0.5,
 					"rounded" : 14
 				}
@@ -104,7 +261,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 431.0, 96.0, 20.0, 20.0 ],
+					"patching_rect" : [ 431.0, 86.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "2",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -124,7 +281,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 521.0, 343.0, 20.0, 20.0 ],
+					"patching_rect" : [ 520.0, 362.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "6",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -144,7 +301,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 400.0, 307.0, 20.0, 20.0 ],
+					"patching_rect" : [ 400.0, 310.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "5",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -164,7 +321,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 431.0, 134.0, 20.0, 20.0 ],
+					"patching_rect" : [ 431.0, 131.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "3",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -178,7 +335,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 423.0, 203.0, 270.0, 24.0 ],
+					"patching_rect" : [ 422.0, 206.0, 270.0, 24.0 ],
 					"text" : "Read and stream the data of a CSV file."
 				}
 
@@ -196,7 +353,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 400.0, 205.0, 20.0, 20.0 ],
+					"patching_rect" : [ 400.0, 208.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "4",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -209,7 +366,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 6.0, 25.0, 793.0, 20.0 ],
+					"patching_rect" : [ 6.0, 23.0, 797.0, 20.0 ],
 					"text" : "Requires the FluCoMa package.",
 					"textjustification" : 1
 				}
@@ -217,28 +374,14 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-33",
-					"maxclass" : "tab",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "int", "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 333.0, 341.0, 186.0, 23.0 ],
-					"style" : "default",
-					"tabcolor" : [ 0.294117647058824, 0.294117647058824, 0.294117647058824, 1.0 ],
-					"tabs" : [ "2", "3", "4", "5" ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bubble" : 1,
 					"id" : "obj-30",
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 543.0, 341.0, 256.0, 24.0 ],
-					"text" : "Number of clusters, triggers clustering."
+					"patching_rect" : [ 541.0, 345.0, 261.0, 51.0 ],
+					"text" : "Number of clusters, triggers clustering. The file \"CM_X.txt\" will be written to the folder of step 2. The \"X\" is the number of clusters."
 				}
 
 			}
@@ -249,19 +392,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 363.0, 428.0, 28.0, 22.0 ],
-					"text" : "1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-27",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 393.0, 429.0, 93.0, 20.0 ],
-					"text" : "detected cluster"
+					"patching_rect" : [ 369.0, 445.0, 28.0, 22.0 ]
 				}
 
 			}
@@ -270,9 +401,9 @@
 					"id" : "obj-24",
 					"maxclass" : "newobj",
 					"numinlets" : 7,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 16.0, 383.0, 336.0, 22.0 ],
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "int", "" ],
+					"patching_rect" : [ 16.0, 402.0, 350.0, 22.0 ],
 					"text" : "cluster_classify_mocap"
 				}
 
@@ -284,8 +415,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 400.0, 227.0, 403.0, 60.0 ],
-					"text" : "The object \"READ CSV FILE\" loads CSV files of motion-capture (mocap) data of a performance, and streams the data. This object is used to simulate a live performance. The option \"fast stream\" will bypass the fps and will output a bang through outlet 4 when the stream reaches its end."
+					"patching_rect" : [ 400.0, 230.0, 403.0, 60.0 ],
+					"text" : "The object \"READ CSV FILE\" loads CSV files of motion-capture (mocap) data of a performance, and streams the data simulating a live performance. The option \"fast stream\" will bypass the fps and output a bang through outlet 4 when the stream reaches its end."
 				}
 
 			}
@@ -302,7 +433,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 431.0, 64.0, 20.0, 20.0 ],
+					"patching_rect" : [ 431.0, 54.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "1",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -316,8 +447,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 597.0, 10.0, 202.0, 33.0 ],
-					"text" : "31 March 2024\nJuan Ignacio Mendoza Garay",
+					"patching_rect" : [ 600.0, 8.0, 202.0, 33.0 ],
+					"text" : "22 April 2024\nJuan Ignacio Mendoza Garay",
 					"textjustification" : 2
 				}
 
@@ -330,7 +461,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 6.0, 10.0, 793.0, 34.0 ],
+					"patching_rect" : [ 6.0, 8.0, 797.0, 34.0 ],
 					"text" : "CLUSTER AND CLASSIFY MOTION-CAPTURED PERFORMANCES\n",
 					"textjustification" : 1
 				}
@@ -343,8 +474,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 454.0, 94.0, 316.0, 24.0 ],
-					"text" : "File name for summarised features with absolute path."
+					"patching_rect" : [ 454.0, 84.0, 334.0, 24.0 ],
+					"text" : "Path for summarised features and cluster means."
 				}
 
 			}
@@ -352,12 +483,12 @@
 				"box" : 				{
 					"bubble" : 1,
 					"id" : "obj-12",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 453.0, 126.0, 346.0, 37.0 ],
-					"text" : "Indices of distances between pairs of reference markers in vectorised self-similarity matrix (details in \"cluster_mocap\")"
+					"patching_rect" : [ 453.0, 116.0, 350.0, 51.0 ],
+					"text" : "Indices of distances between pairs of reference markers in vectorised self-similarity matrix (details in \"cluster_classify_mocap\")"
 				}
 
 			}
@@ -368,8 +499,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.0, 94.0, 396.0, 22.0 ],
-					"text" : "C:\\\\\\\\Users\\\\MeMyself\\\\Documents\\\\Tabula_Rasa_data\\\\other\\\\TR_SF.csv"
+					"patching_rect" : [ 30.0, 84.0, 385.0, 22.0 ],
+					"text" : "C:\\\\\\\\Users\\\\onlyme\\\\Documents\\\\Tabula_Rasa_data\\\\other\\\\"
 				}
 
 			}
@@ -379,7 +510,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 162.0, 306.0, 52.0, 20.0 ],
+					"patching_rect" : [ 162.0, 309.0, 52.0, 20.0 ],
 					"text" : "markers"
 				}
 
@@ -392,7 +523,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 135.0, 305.0, 24.0, 22.0 ],
+					"patching_rect" : [ 135.0, 307.0, 24.0, 22.0 ],
 					"triangle" : 0
 				}
 
@@ -403,7 +534,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 281.0, 307.0, 27.0, 20.0 ],
+					"patching_rect" : [ 281.0, 310.0, 27.0, 20.0 ],
 					"text" : "fps"
 				}
 
@@ -416,7 +547,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 254.0, 306.0, 24.0, 22.0 ],
+					"patching_rect" : [ 254.0, 309.0, 24.0, 22.0 ],
 					"triangle" : 0
 				}
 
@@ -425,11 +556,12 @@
 				"box" : 				{
 					"bubble" : 1,
 					"id" : "obj-6",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 423.0, 304.0, 376.0, 24.0 ],
-					"text" : " Summarise preferably when the whole performance has ended."
+					"patching_rect" : [ 422.0, 302.0, 380.0, 37.0 ],
+					"text" : "Summarise when the performance has ended. The file \"SF.csv\" will be written to the folder of step 2."
 				}
 
 			}
@@ -441,7 +573,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 373.0, 304.0, 24.0, 24.0 ]
+					"patching_rect" : [ 373.0, 307.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -452,7 +584,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 380.0, 133.0, 49.0, 22.0 ],
+					"patching_rect" : [ 380.0, 130.0, 49.0, 22.0 ],
 					"text" : "90 115"
 				}
 
@@ -468,7 +600,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-11",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 1,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"numinlets" : 4,
 					"numoutlets" : 0,
@@ -484,7 +616,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 48.0, 145.0, 457.0, 328.0 ],
+						"rect" : [ 448.0, 161.0, 457.0, 328.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -560,7 +692,7 @@
 									"patching_rect" : [ 20.0, 263.0, 326.0, 50.0 ],
 									"peakcolor" : [ 0.945098039215686, 0.913725490196078, 0.407843137254902, 1.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 4.0, 75.0, 326.0, 30.0 ],
+									"presentation_rect" : [ 5.0, 90.0, 326.0, 34.0 ],
 									"setminmax" : [ 0.0, 3.0 ],
 									"setstyle" : 1,
 									"size" : 228
@@ -569,28 +701,28 @@
 							}
 , 							{
 								"box" : 								{
-									"fontsize" : 10.0,
+									"fontsize" : 12.0,
 									"id" : "obj-1",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 30.0, 237.0, 138.0, 18.0 ],
+									"patching_rect" : [ 30.0, 237.0, 164.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 5.0, 59.0, 138.0, 18.0 ],
+									"presentation_rect" : [ 6.0, 72.0, 164.0, 20.0 ],
 									"text" : "SUMMARY FEATURES:"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontsize" : 10.0,
+									"fontsize" : 12.0,
 									"id" : "obj-16",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 185.0, 204.0, 137.0, 18.0 ],
+									"patching_rect" : [ 185.0, 204.0, 163.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 169.0, 44.0, 162.0, 18.0 ],
+									"presentation_rect" : [ 170.0, 53.0, 161.0, 20.0 ],
 									"text" : "Normalised distances",
 									"textjustification" : 1
 								}
@@ -598,14 +730,14 @@
 							}
 , 							{
 								"box" : 								{
-									"fontsize" : 10.0,
+									"fontsize" : 12.0,
 									"id" : "obj-15",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 20.0, 204.0, 137.0, 18.0 ],
+									"patching_rect" : [ 20.0, 204.0, 162.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 4.0, 44.0, 162.0, 18.0 ],
+									"presentation_rect" : [ 5.0, 53.0, 161.0, 20.0 ],
 									"text" : "Taxicab speeds",
 									"textjustification" : 1
 								}
@@ -613,14 +745,14 @@
 							}
 , 							{
 								"box" : 								{
-									"fontsize" : 10.0,
+									"fontsize" : 12.0,
 									"id" : "obj-13",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 30.0, 130.0, 138.0, 18.0 ],
+									"patching_rect" : [ 30.0, 130.0, 164.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 5.0, 2.0, 138.0, 18.0 ],
+									"presentation_rect" : [ 6.0, 3.0, 164.0, 20.0 ],
 									"text" : "CONTINUOUS FEATURES:"
 								}
 
@@ -636,7 +768,7 @@
 									"patching_rect" : [ 186.0, 155.0, 161.0, 50.0 ],
 									"peakcolor" : [ 0.945098039215686, 0.913725490196078, 0.407843137254902, 1.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 170.0, 16.0, 161.0, 30.0 ],
+									"presentation_rect" : [ 171.0, 22.0, 161.0, 34.0 ],
 									"setminmax" : [ 0.0, 3.0 ],
 									"setstyle" : 1,
 									"size" : 171
@@ -654,7 +786,7 @@
 									"patching_rect" : [ 20.0, 155.0, 161.0, 50.0 ],
 									"peakcolor" : [ 0.945098039215686, 0.913725490196078, 0.407843137254902, 1.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 4.0, 16.0, 161.0, 30.0 ],
+									"presentation_rect" : [ 5.0, 22.0, 161.0, 34.0 ],
 									"setminmax" : [ 0.0, 0.150000005960464 ],
 									"setstyle" : 1,
 									"size" : 57
@@ -768,7 +900,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 16.0, 427.0, 335.5, 111.0 ],
+					"patching_rect" : [ 16.0, 451.0, 336.0, 130.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -780,8 +912,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 16.0, 63.0, 411.0, 22.0 ],
-					"text" : "C:\\\\\\\\Users\\\\MeMyself\\\\Documents\\\\Tabula_Rasa_data\\\\test_skeleton_data\\\\"
+					"patching_rect" : [ 16.0, 53.0, 399.0, 22.0 ],
+					"text" : "C:\\\\\\\\Users\\\\onlyme\\\\Documents\\\\Tabula_Rasa_data\\\\test_skeleton_data\\\\"
 				}
 
 			}
@@ -792,7 +924,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 454.0, 62.0, 316.0, 24.0 ],
+					"patching_rect" : [ 454.0, 52.0, 316.0, 24.0 ],
 					"text" : "Path for CSV files of mocap data. \\\\ is interpreted as \\. "
 				}
 
@@ -803,8 +935,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 357.0, 384.0, 313.0, 20.0 ],
-					"text" : "The object \"cluster_classify_mocap\" gets the job done"
+					"patching_rect" : [ 368.0, 403.0, 313.0, 20.0 ],
+					"text" : "The object \"cluster_classify_mocap\" gets the job done."
 				}
 
 			}
@@ -2937,7 +3069,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 16.0, 205.0, 376.0, 86.0 ],
+					"patching_rect" : [ 16.0, 208.0, 376.0, 86.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -2953,7 +3085,24 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 357.0, 419.0, 132.0, 42.0 ],
+					"patching_rect" : [ 361.0, 438.0, 170.0, 37.0 ],
+					"proportion" : 0.5,
+					"rounded" : 14
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.811764705882353, 0.894117647058824, 0.823529411764706, 0.4 ],
+					"border" : 2,
+					"bordercolor" : [ 0.592156862745098, 0.76078431372549, 0.615686274509804, 1.0 ],
+					"id" : "obj-10",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 361.0, 485.0, 170.0, 96.0 ],
 					"proportion" : 0.5,
 					"rounded" : 14
 				}
@@ -2963,7 +3112,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 5 ],
-					"midpoints" : [ 382.5, 334.0, 289.666666666666686, 334.0 ],
+					"midpoints" : [ 382.5, 351.0, 301.333333333333314, 351.0 ],
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -2978,7 +3127,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 1 ],
-					"midpoints" : [ 389.5, 165.0, 3.0, 165.0, 3.0, 378.0, 78.333333333333343, 378.0 ],
+					"midpoints" : [ 389.5, 167.0, 3.0, 167.0, 3.0, 380.0, 80.666666666666657, 380.0 ],
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -3013,6 +3162,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"midpoints" : [ 356.5, 507.0, 378.5, 507.0 ],
+					"source" : [ "obj-24", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-29", 1 ],
 					"source" : [ "obj-24", 3 ]
 				}
@@ -3020,15 +3177,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-24", 6 ],
-					"source" : [ "obj-33", 0 ]
+					"destination" : [ "obj-9", 2 ],
+					"source" : [ "obj-34", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 2 ],
-					"source" : [ "obj-34", 0 ]
+					"destination" : [ "obj-24", 6 ],
+					"source" : [ "obj-39", 0 ]
 				}
 
 			}
@@ -3042,7 +3199,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 4 ],
-					"midpoints" : [ 39.5, 121.0, 10.0, 121.0, 10.0, 353.0, 236.833333333333343, 353.0 ],
+					"midpoints" : [ 39.5, 123.0, 10.0, 123.0, 10.0, 351.0, 246.166666666666657, 351.0 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -3084,15 +3241,15 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "fluid.buf2list.mxe64",
+				"type" : "mx64"
+			}
+, 			{
 				"name" : "fluid.dataset~.mxe64",
 				"type" : "mx64"
 			}
 , 			{
 				"name" : "fluid.kmeans~.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "fluid.labelset~.mxe64",
 				"type" : "mx64"
 			}
 , 			{

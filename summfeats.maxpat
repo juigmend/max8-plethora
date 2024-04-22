@@ -40,9 +40,9 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "[list summarised speeds and distances]",
+					"comment" : "[list] summarised speeds and distances",
 					"id" : "obj-6",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -69,7 +69,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 20.0, 260.0, 649.0, 20.0 ],
-					"text" : "Juan Ignacio Mendoza Garay - 31 March 2024",
+					"text" : "Juan Ignacio Mendoza Garay - 22 April 2024",
 					"textjustification" : 1
 				}
 
@@ -78,7 +78,7 @@
 				"box" : 				{
 					"comment" : "[list] reference markers in self-sim. matrix",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2124,7 +2124,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 456.0, 10.0, 30.0, 30.0 ]
 								}
 
@@ -2340,7 +2340,7 @@
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"outlettype" : [ "bang" ],
 													"patching_rect" : [ 156.0, 25.0, 30.0, 30.0 ]
 												}
 
@@ -3572,7 +3572,7 @@
 					"comment" : "[list] x1 y1 z1 x2 ...",
 					"id" : "obj-9",
 					"ignoreclick" : 1,
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3585,7 +3585,7 @@
 				"box" : 				{
 					"comment" : "[int] number of markers",
 					"id" : "obj-17",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3598,7 +3598,7 @@
 				"box" : 				{
 					"comment" : "[int] fps",
 					"id" : "obj-20",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3611,11 +3611,11 @@
 				"box" : 				{
 					"comment" : "[bang] summarise",
 					"id" : "obj-25",
-					"index" : 0,
+					"index" : 6,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 321.0, 10.0, 30.0, 30.0 ]
 				}
 
@@ -3624,7 +3624,7 @@
 				"box" : 				{
 					"comment" : "[symbol] summarisation filename with absolute path",
 					"id" : "obj-26",
-					"index" : 0,
+					"index" : 5,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3637,7 +3637,7 @@
 				"box" : 				{
 					"comment" : "[list] continuous speeds",
 					"id" : "obj-28",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -3649,7 +3649,7 @@
 				"box" : 				{
 					"comment" : "[list] continuous distances",
 					"id" : "obj-32",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -3659,9 +3659,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "[list summarised speeds and distances]",
+					"comment" : "[list] summarised speeds and distances",
 					"id" : "obj-35",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -3797,37 +3797,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "list_delace_3.maxpat",
-				"bootpath" : "~/Documents/Max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "list_pdiff.maxpat",
-				"bootpath" : "~/Documents/Max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "list_sdiff.maxpat",
-				"bootpath" : "~/Documents/Max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "list_toCSV.maxpat",
-				"bootpath" : "~/Documents/Max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
