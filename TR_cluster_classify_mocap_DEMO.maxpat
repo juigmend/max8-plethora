@@ -46,7 +46,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 401.0, 315.0, 401.0, 33.0 ],
-					"text" : "The summarisation buffer is cleared automatically after each summarisation (\"bang\" message), or manually with the message \"clear\"."
+					"text" : "The summarisation buffer is cleared automatically after each summarisation (\"bang\" message), or with the message \"clearsf\"."
 				}
 
 			}
@@ -57,8 +57,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 362.0, 321.0, 35.0, 22.0 ],
-					"text" : "clear"
+					"patching_rect" : [ 353.0, 320.5, 44.0, 22.0 ],
+					"text" : "clearsf"
 				}
 
 			}
@@ -3756,7 +3756,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 5 ],
-					"midpoints" : [ 371.5, 348.0, 301.333333333333314, 348.0 ],
+					"midpoints" : [ 362.5, 348.0, 301.333333333333314, 348.0 ],
 					"source" : [ "obj-37", 0 ]
 				}
 
