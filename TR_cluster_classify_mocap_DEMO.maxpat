@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 87.0, 84.0, 813.0, 601.0 ],
+		"rect" : [ 87.0, 84.0, 811.0, 601.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,148 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"embed" : 1,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-36",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "int" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 6,
+							"revision" : 0,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 59.0, 107.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 1,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 83.0, 35.0, 22.0 ],
+									"text" : "set 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 50.0, 33.0, 58.0, 22.0 ],
+									"text" : "loadbang"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-45",
+									"maxclass" : "toggle",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 50.0, 122.0, 24.0, 24.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 0.0, 0.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-22",
+									"index" : 1,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 50.0, 184.0, 30.0, 30.0 ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-45", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-22", 0 ],
+									"source" : [ "obj-45", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 373.0, 320.0, 24.0, 24.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-42",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 401.0, 315.0, 401.0, 33.0 ],
-					"text" : "The summarisation buffer is cleared automatically after each summarisation (\"bang\" message), or with the message \"clearsf\"."
+					"text" : "The summarisation buffers are cleared automatically after each summarisation, or with \"clearsf\". Input to the buffers can be toggled (1,0)."
 				}
 
 			}
@@ -57,7 +192,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 353.0, 320.5, 44.0, 22.0 ],
+					"patching_rect" : [ 315.0, 321.0, 44.0, 22.0 ],
 					"text" : "clearsf"
 				}
 
@@ -739,7 +874,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 347.0, 363.0, 96.0, 41.0 ],
+					"patching_rect" : [ 347.0, 367.0, 96.0, 41.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -750,7 +885,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 369.0, 506.0, 154.0, 20.0 ],
+					"patching_rect" : [ 363.0, 506.0, 168.0, 20.0 ],
 					"text" : "CLUSTER BELONGING",
 					"textjustification" : 1
 				}
@@ -798,8 +933,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 542.0, 455.0, 259.0, 141.0 ],
-					"text" : "INSTRUCTIONS:\n     Click or edit the objects indicated by the bubbles in the order of the violet numbers, to expose the system to the first performance. Then, expose the system to more performances by repeating steps 4 to 6. It will learn and classify (detect cluster) every subsequent performance it is exposed to. Step 4 without steps 5 and 6, will only classify the performance."
+					"patching_rect" : [ 542.0, 455.0, 260.0, 141.0 ],
+					"text" : "INSTRUCTIONS:\n     Click or edit the objects indicated by the bubbles in numbered order. Learn clusters (step 6) only after double the number of clusters has been summarised. After learning clusters the system will continuously classify  the streaming performance (cluster detection and strength of belonging). The input to the summarisation buffers may be toggled off (0) if classifying without summarisation is intended."
 				}
 
 			}
@@ -853,7 +988,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 445.0, 373.0, 20.0, 20.0 ],
+					"patching_rect" : [ 445.0, 377.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "6",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -873,7 +1008,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 400.0, 292.0, 20.0, 20.0 ],
+					"patching_rect" : [ 400.0, 291.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "5",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -952,7 +1087,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 468.0, 351.0, 334.0, 64.0 ],
+					"patching_rect" : [ 468.0, 355.0, 334.0, 64.0 ],
 					"text" : "Number of clusters. The first click (green) learns clusters and writes their means to file \"CM_X.csv\" (X is number of clusters), or reads the file if it exists. Subsequent clicks (blue) update the means and overwrite the file."
 				}
 
@@ -1072,7 +1207,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 30.0, 81.0, 399.0, 22.0 ],
-					"text" : "C:\\\\\\\\Users\\\\yeaitsme\\\\Documents\\\\Tabula_Rasa_data\\\\other\\\\"
+					"text" : "C:\\\\\\\\Users\\\\itsjohnny\\\\Documents\\\\Tabula_Rasa_data\\\\other\\\\"
 				}
 
 			}
@@ -1082,7 +1217,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 162.0, 292.0, 52.0, 20.0 ],
+					"patching_rect" : [ 162.0, 291.0, 52.0, 20.0 ],
 					"text" : "markers"
 				}
 
@@ -1095,7 +1230,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 135.0, 290.0, 24.0, 22.0 ],
+					"patching_rect" : [ 135.0, 289.0, 24.0, 22.0 ],
 					"triangle" : 0
 				}
 
@@ -1106,7 +1241,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 281.0, 293.0, 27.0, 20.0 ],
+					"patching_rect" : [ 281.0, 292.0, 27.0, 20.0 ],
 					"text" : "fps"
 				}
 
@@ -1119,7 +1254,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 254.0, 292.0, 24.0, 22.0 ],
+					"patching_rect" : [ 254.0, 291.0, 24.0, 22.0 ],
 					"triangle" : 0
 				}
 
@@ -1131,7 +1266,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 422.0, 290.0, 380.0, 24.0 ],
+					"patching_rect" : [ 422.0, 289.0, 380.0, 24.0 ],
 					"text" : "Summarise when the performance has ended, write to \"SF.csv\"."
 				}
 
@@ -1144,7 +1279,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 373.0, 289.0, 24.0, 24.0 ]
+					"patching_rect" : [ 373.0, 288.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -1484,7 +1619,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 16.0, 53.0, 413.0, 22.0 ],
-					"text" : "C:\\\\\\\\Users\\\\yeaitsme\\\\Documents\\\\Tabula_Rasa_data\\\\test_skeleton_data\\\\"
+					"text" : "C:\\\\\\\\Users\\\\itsjohnny\\\\Documents\\\\Tabula_Rasa_data\\\\test_skeleton_data\\\\"
 				}
 
 			}
@@ -3756,7 +3891,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 5 ],
-					"midpoints" : [ 362.5, 348.0, 301.333333333333314, 348.0 ],
+					"midpoints" : [ 382.5, 350.0, 301.333333333333314, 350.0 ],
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 5 ],
+					"midpoints" : [ 324.5, 350.0, 301.333333333333314, 350.0 ],
 					"source" : [ "obj-37", 0 ]
 				}
 
@@ -3787,7 +3930,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
-					"midpoints" : [ 39.5, 125.0, 10.0, 125.0, 10.0, 355.0, 356.5, 355.0 ],
+					"midpoints" : [ 39.5, 122.0, 10.0, 122.0, 10.0, 359.0, 356.5, 359.0 ],
 					"order" : 1,
 					"source" : [ "obj-7", 0 ]
 				}
