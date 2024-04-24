@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 107.0, 269.0, 414.0 ],
+		"rect" : [ 59.0, 107.0, 385.0, 381.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,8 +44,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2.0, 388.0, 267.0, 20.0 ],
-					"text" : "Juan Ignacio Mendoza Garay - 2024",
+					"patching_rect" : [ 10.0, 350.0, 281.0, 20.0 ],
+					"text" : "Juan Ignacio Mendoza Garay - 24 April 2024",
 					"textjustification" : 1
 				}
 
@@ -57,7 +57,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 10.0, 216.0, 29.5, 22.0 ],
+					"patching_rect" : [ 10.0, 178.0, 29.5, 22.0 ],
 					"text" : "t b l"
 				}
 
@@ -69,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 145.0, 252.0, 38.0, 22.0 ],
+					"patching_rect" : [ 145.0, 214.0, 38.0, 22.0 ],
 					"text" : "zl.reg"
 				}
 
@@ -79,10 +79,10 @@
 					"id" : "obj-146",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 145.0, 57.0, 61.0, 22.0 ],
-					"text" : "trigger s s"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "clear" ],
+					"patching_rect" : [ 145.0, 57.0, 146.0, 22.0 ],
+					"text" : "trigger s s clear"
 				}
 
 			}
@@ -93,7 +93,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 145.0, 136.0, 86.0, 22.0 ],
+					"patching_rect" : [ 145.0, 136.0, 89.0, 22.0 ],
 					"text" : "route notfound"
 				}
 
@@ -117,7 +117,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 212.0, 291.0, 49.0, 22.0 ],
+					"patching_rect" : [ 215.0, 253.0, 49.0, 22.0 ],
 					"text" : "read $1"
 				}
 
@@ -129,7 +129,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 145.0, 291.0, 51.0, 22.0 ],
+					"patching_rect" : [ 145.0, 253.0, 51.0, 22.0 ],
 					"text" : "write $1"
 				}
 
@@ -482,7 +482,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 10.0, 174.0, 105.0, 22.0 ],
+					"patching_rect" : [ 10.0, 136.0, 105.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -505,7 +505,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "int" ],
-					"patching_rect" : [ 21.0, 353.0, 40.0, 22.0 ],
+					"patching_rect" : [ 21.0, 315.0, 40.0, 22.0 ],
 					"text" : "text"
 				}
 
@@ -589,8 +589,16 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-147", 1 ],
-					"midpoints" : [ 196.5, 91.0, 242.0, 91.0, 242.0, 227.0, 173.5, 227.0 ],
+					"midpoints" : [ 218.0, 93.0, 260.0, 93.0, 260.0, 201.0, 173.5, 201.0 ],
 					"source" : [ "obj-146", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-99", 0 ],
+					"midpoints" : [ 281.5, 300.0, 30.5, 300.0 ],
+					"source" : [ "obj-146", 2 ]
 				}
 
 			}
